@@ -82,17 +82,17 @@ add_favorites.forEach(function (button) {
 
 logo.addEventListener("click", function (event) {
   event.preventDefault();
-  window.location.href = "home-page.html";
+  window.location.href = "index.html";
 });
 
 logo_text.addEventListener("click", function (event) {
   event.preventDefault();
-  window.location.href = "home-page.html";
+  window.location.href = "index.html";
 });
 
 footer_logo.addEventListener("click", function (event) {
   event.preventDefault();
-  window.location.href = "home-page.html";
+  window.location.href = "index.html";
 });
 
 get_started.addEventListener("click", function (event) {
