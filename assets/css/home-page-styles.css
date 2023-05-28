@@ -459,7 +459,7 @@ height: 24px;
   top: 32px;
 }
 
-.get-started {
+.get-started-btn {
   font-family: "Oswald";
   font-weight: 400;
   font-size: 16px;
@@ -476,11 +476,11 @@ height: 24px;
   border: none;
 }
 
-.get-started:hover {
+.get-started-btn:hover {
   background-color: #1779b2;
 }
 
-.get-started:active {
+.get-started-btn:active {
   background-color: #146190;
 }
 
