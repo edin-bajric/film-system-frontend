@@ -282,17 +282,17 @@ nav {
   position: relative;
   color: white;
   bottom: 175px;
-  right: 32px;
+  right: 42px;
 }
 
 .sort::after {
   content: " Latest";
-  color: white;
+  color: #77c3ec;
   cursor: pointer;
 }
 
 .sort:hover::after {
-  color: #77c3ec;
+  color: white;
 }
 
 .sort.clicker::after {
@@ -306,6 +306,7 @@ nav {
 
 .large-card {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   width: 95.5%;
   height: 500px;
@@ -318,25 +319,26 @@ nav {
   transition: 0.3s;
 }
 
-.large-card:hover {
-  background-color: #dcdcdc;
-  cursor: pointer;
-}
-
-.large-card:active {
-  background-color: #bdbdbd;
-}
-
 .movie-image {
   width: 30%;
   height: 100%;
   padding: 16px;
 }
 
+.movie-image:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
 .movie-image-p {
-  width: 52.5%;
+  width: 46.5%;
   height: 100%;
   padding: 16px;
+}
+
+.movie-image-p:hover {
+  opacity: 80%;
+  cursor: pointer;
 }
 
 .movie-image img {
@@ -416,6 +418,28 @@ nav {
 
 .add-watchlist.clicked span::before {
   content: "add";
+}
+
+::-webkit-scrollbar {
+  width: 1em;
+}
+
+::-webkit-scrollbar-track {
+  background: #dcdcdc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #77c3ec;
+  border: .2em solid #dcdcdc;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1779b2;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #146190;
 }
 
 .get-top {
@@ -575,6 +599,9 @@ footer {
   }
   .slogan {
     font-size: 48px;
+  }
+  .all, .sort {
+    font-size: 24px;
   }
   .get-top {
     flex-direction: column;

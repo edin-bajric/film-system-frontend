@@ -4,6 +4,9 @@ const mobile_menu = document.querySelector(".mobile-menu");
 const add_watchlist = document.querySelectorAll(".add-watchlist");
 const add_favorites = document.querySelectorAll(".add-favorites");
 
+const mobile_favorite = document.querySelectorAll(".favorite-mobile");
+const mobile_watchlist = document.querySelectorAll(".watchlist-mobile");
+
 const logo = document.querySelector(".logo");
 const logo_text = document.querySelector(".logo-text");
 const footer_logo = document.querySelector(".footer-logo");
@@ -77,6 +80,18 @@ add_watchlist.forEach(function (button) {
 add_favorites.forEach(function (button) {
   button.addEventListener("click", function () {
     this.classList.toggle("clicked");
+  });
+});
+
+mobile_watchlist.forEach(function (button) {
+  button.addEventListener("click", function () {
+    this.classList.toggle("pressed");
+  });
+});
+
+mobile_favorite.forEach(function (button) {
+  button.addEventListener("click", function () {
+    this.classList.toggle("pressed");
   });
 });
 

@@ -304,6 +304,69 @@ nav {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.title-buttons-mobile {
+  width: 100%;
+  display: none;
+  justify-content: space-between;
+  padding-left: 32px;
+  padding-right: 32px;
+  position: relative;
+  top: -170px;
+}
+
+.for-trailer-mobile, .favorite-mobile, .watchlist-mobile {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+  color: white;
+  cursor: pointer;
+}
+
+.favorite-mobile span::before {
+  content: "favorite";
+}
+
+.favorite-mobile:hover {
+  background-color: #dcdcdc;
+}
+
+.favorite-mobile:active {
+  background-color: #bdbdbd;
+}
+
+.favorite-mobile.pressed {
+  background-color: #77c3ec;
+}
+
+.favorite-mobile.pressed span::before {
+  content: "favorite";
+  font-variation-settings: "FILL" 1;
+}
+
+.watchlist-mobile span::before {
+  content: "add";
+}
+
+.watchlist-mobile:hover {
+  background-color: #dcdcdc;
+}
+
+.watchlist-mobile:active {
+  background-color: #bdbdbd;
+}
+
+.watchlist-mobile.pressed {
+  background-color: #77c3ec;
+}
+
+.watchlist-mobile.pressed span::before {
+  content: "check";
+}
+
 .play-trailer {
   width: 140px;
   height: 42px;
@@ -339,7 +402,9 @@ nav {
   top: -116px;
   display: flex;
   justify-content: space-between;
-  padding: 32px;
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-bottom: 32px;
 }
 
 .favorite-watchlist {
@@ -430,7 +495,7 @@ nav {
   top: -100px;
   font-family: "Oswald";
   font-weight: 400;
-  font-size: 32px;
+  font-size: 24px;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -509,12 +574,12 @@ nav {
 
 .sort::after {
   content: " Top comments";
-  color: white;
+  color: #77c3ec;
   cursor: pointer;
 }
 
 .sort:hover::after {
-  color: #77c3ec;
+  color: white;
 }
 
 .sort.clicker::after {
@@ -527,12 +592,13 @@ nav {
   font-size: 40px;
   color: white;
   padding: 32px;
+  position: relative;
 }
 
 .all-comments {
   font-family: "Oswald";
   font-weight: 400;
-  font-size: 32px;
+  font-size: 24px;
   color: #1e1e1e;
   display: flex;
   flex-direction: column;
@@ -563,7 +629,7 @@ nav {
 }
 
 .comment-by-i::after {
-  content: " Ivan Ivanović";
+  content: " Ivan Ivanić";
   color: #77c3ec;
 }
 
@@ -611,6 +677,28 @@ nav {
 
 .add-comment:active {
   background-color: #bdbdbd;
+}
+
+::-webkit-scrollbar {
+  width: 1em;
+}
+
+::-webkit-scrollbar-track {
+  background: #dcdcdc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #77c3ec;
+  border: .2em solid #dcdcdc;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1779b2;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #146190;
 }
 
 .get-top {
@@ -718,6 +806,7 @@ footer {
     padding-left: 0px;
   }
   .top-info {
+    font-size: 24px;
     display: list-item;
     top: 100px;
   }
@@ -728,7 +817,11 @@ footer {
   .slogan {
     font-size: 48px;
   }
+  .title-buttons-mobile {
+    display: flex;
+  }
   .title-buttons {
+    display: none;
     flex-direction: column;
     top: -90px;
     width: 100%;
@@ -742,17 +835,49 @@ footer {
   }
   .all-info {
     flex-direction: column;
+    top: -180px;
   }
   .desc {
     margin-top: 16px;
     width: 100%;
   }
+  .photos {
+    top: -180px;
+  }
+  .all-photos {
+    padding: 32px;
+    top: -180px;
+  }
   .all-photos img{
     padding: 0px;
-    border-radius: 16px;
+    border-radius: 0px;
+  }
+  .comment-sort {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
   .sort {
+    font-size: 24px;
     right: 0px;
+    padding-left: 32px;
+    top: -180px;
+  }
+  .comments {
+    font-size: 24px;
+    top: -180px;
+  }
+  .all-comments {
+    position: relative;
+    font-size: 20px;
+    top: -180px;
+  }
+  .comment-info {
+    flex-direction: column;
+  }
+  .add-comment {
+    position: relative;
+    top: -180px;
   }
   .get-top {
     flex-direction: column;

@@ -305,6 +305,7 @@
   .large-card {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: 95.5%;
     height: 500px;
     position: relative;
@@ -316,25 +317,26 @@
     transition: 0.3s;
   }
   
-  .large-card:hover {
-    background-color: #dcdcdc;
-    cursor: pointer;
-  }
-  
-  .large-card:active {
-    background-color: #bdbdbd;
-  }
-  
   .movie-image {
     width: 30%;
     height: 100%;
     padding: 16px;
   }
+
+  .movie-image:hover {
+    opacity: 80%;
+    cursor: pointer;
+  }
   
   .movie-image-p {
-    width: 52.5%;
+    width: 46.5%;
     height: 100%;
     padding: 16px;
+  }
+
+  .movie-image-p:hover {
+    opacity: 80%;
+    cursor: pointer;
   }
   
   .movie-image img {
@@ -415,6 +417,28 @@
 
 .add-favorites.clicked span::before {
   content: "favorite"; 
+}
+
+::-webkit-scrollbar {
+  width: 1em;
+}
+
+::-webkit-scrollbar-track {
+  background: #dcdcdc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #77c3ec;
+  border: .2em solid #dcdcdc;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1779b2;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #146190;
 }
   
   .get-top {
@@ -574,6 +598,9 @@
     }
     .slogan {
       font-size: 48px;
+    }
+    .all-movies, .all-directors {
+      font-size: 24px;
     }
     .get-top {
       flex-direction: column;

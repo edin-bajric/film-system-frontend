@@ -356,7 +356,7 @@
     top: -100px;
     font-family: "Oswald";
     font-weight: 400;
-    font-size: 32px;
+    font-size: 24px;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -417,7 +417,7 @@
     width: 50%;
     font-family: "Oswald";
     font-weight: 400;
-    font-size: 40px;
+    font-size: 32px;
     color: white;
     padding: 32px;
   }
@@ -441,13 +441,37 @@
     justify-content: space-between;
     font-family: "Oswald";
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     color: white;
     padding: 32px;
+    margin-right: 32px;
+    margin-left: 32px;
   }
 
   .biography-text p {
     margin-bottom: 16px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 1em;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #dcdcdc;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #77c3ec;
+    border: .2em solid #dcdcdc;
+    border-radius: 100vw;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1779b2;
+  }
+  
+  ::-webkit-scrollbar-thumb:active {
+    background: #146190;
   }
   
   .get-top {
@@ -572,17 +596,26 @@
     }
     .all-info {
       flex-direction: column;
+      font-size: 20px;
     }
     .desc {
       margin-top: 16px;
       width: 100%;
     }
+    .all-photos {
+      padding: 32px;
+    }
     .all-photos img{
       padding: 0px;
-      border-radius: 16px;
+      border-radius: 0px;
     }
     .known-for {
         width: 100%;
+    }
+    .biography-text {
+      text-align: center;
+      margin-right: 0px;
+      margin-left: 0px;
     }
     .get-top {
       flex-direction: column;

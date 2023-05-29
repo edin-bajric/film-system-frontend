@@ -292,28 +292,16 @@ height: 24px;
   transition: 0.3s;
 }
 
-.card:hover, .container-box {
- background-color: #dcdcdc !important;
- cursor: pointer;
-}
-
-.container-box {
-  background-color: initial !important;
-}
-
-.card:active, .container-box {
- background-color: #bdbdbd !important;
-}
-
-.container-box {
-  background-color: initial !important;
-}
-
 .director-image {
   width: 100%;
   height: 70%;
   object-fit: cover;
   border-radius: 8px;
+}
+
+.director-image:hover {
+  opacity: 80%;
+  cursor: pointer;
 }
 
 .container-box {
@@ -411,6 +399,28 @@ height: 24px;
 .grid .card {
   width: 100%;
   height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 1em;
+}
+
+::-webkit-scrollbar-track {
+  background: #dcdcdc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #77c3ec;
+  border: .2em solid #dcdcdc;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1779b2;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #146190;
 }
 
 .get-top {
