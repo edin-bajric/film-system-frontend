@@ -603,6 +603,9 @@ footer {
   .all, .sort {
     font-size: 24px;
   }
+  .sort:hover::after {
+    color: #77c3ec;
+  }
   .get-top {
     flex-direction: column;
   }
