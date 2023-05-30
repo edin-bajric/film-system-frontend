@@ -578,6 +578,9 @@
     .all-movies, .all-directors {
       font-size: 24px;
     }
+    .all-directors {
+      width: 110px;
+    }
     .get-top {
       flex-direction: column;
     }
