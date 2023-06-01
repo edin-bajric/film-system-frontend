@@ -443,7 +443,8 @@ height: 24px;
   display: grid;
   grid-gap: 16px;
   grid-template-columns: repeat(4, 1fr);
-  margin-right: 60px;
+  margin-left: 32px;
+  margin-right: 32px;
 }
 
 @media (max-width: 991px) {
@@ -467,6 +468,7 @@ height: 24px;
 .grid .card {
   width: 100%;
   height: 100%;
+  margin-left: 0px;
 }
 
 ::-webkit-scrollbar {
