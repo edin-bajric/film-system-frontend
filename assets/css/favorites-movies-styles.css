@@ -258,7 +258,7 @@
     justify-content: space-between;
   }
   
-  .all-movies {
+  .all-movies a{
     font-family: "Oswald";
     font-weight: 400;
     font-size: 32px;
@@ -269,13 +269,14 @@
     left: 32px;
     cursor: pointer;
     transition: 0.3s;
+    text-decoration: none;
   }
 
-  .all-movies:hover {
+  .all-movies a:hover {
     color: white;
   }
 
-  .all-directors {
+  .all-directors a{
     font-family: "Oswald";
     font-weight: 400;
     font-size: 32px;
@@ -286,9 +287,10 @@
     bottom: 175px;
     cursor: pointer;
     transition: 0.3s;
+    text-decoration: none;
   }
 
-  .all-directors:hover {
+  .all-directors a:hover {
     color: white;
   }
   
@@ -594,10 +596,10 @@
     .slogan {
       font-size: 48px;
     }
-    .all-movies, .all-directors {
+    .all-movies a, .all-directors a{
       font-size: 24px;
     }
-    .all-directors {
+    .all-directors a{
       width: 110px;
     }
     .get-top {
