@@ -374,6 +374,7 @@
   
   .desc {
     width: 70%;
+    cursor: pointer;
   }
   
   .photos {

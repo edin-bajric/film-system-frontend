@@ -83,7 +83,7 @@
         <p class="died">March 7, 1999 (70)</p>
       </div>
       <div class="desc">
-        <p>
+        <p onclick="scrollToElement()">
           Stanley Kubrick was an American film director, producer and
           screenwriter. Widely considered one of the greatest filmmakers of all
           time, his films—almost all of which are adaptations of novels or short
@@ -111,7 +111,7 @@
       Jacket, Eyes Wide Shut, The Shining
     </h2>
 
-    <h2 class="biography">Biography</h2>
+    <h2 class="biography" id="biography">Biography</h2>
     <div class="biography-text">
       <p>
         Stanley Kubrick was born in Manhattan, New York City, to Sadie Gertrude
@@ -288,6 +288,12 @@
         </div>
       </div>
     </footer>
+    <script>
+      function scrollToElement() {
+  var element = document.getElementById("biography");
+  element.scrollIntoView({ behavior: "smooth" });
+}
+    </script>
   </body>
 </html>
 <script src="../assets/js/index.js"></script>
