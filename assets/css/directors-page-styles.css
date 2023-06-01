@@ -366,6 +366,10 @@ height: 24px;
   left: 32px;
 }
 
+.grid .container-box {
+  align-items: center;
+}
+
 .grid {
   display: grid;
   grid-gap: 16px;
