@@ -455,7 +455,7 @@ height: 24px;
   margin-right: 32px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1066px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
   }
