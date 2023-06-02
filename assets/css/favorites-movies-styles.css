@@ -271,9 +271,7 @@
     cursor: pointer;
     transition: 0.3s;
     text-decoration: none;
-    background-color: #77c3ec;
-    border-radius: 8px;
-    padding: 4px;
+    
   }
 
   .all-movies a:hover {
@@ -292,9 +290,7 @@
     cursor: pointer;
     transition: 0.3s;
     text-decoration: none;
-    background-color: #77c3ec;
-    border-radius: 8px;
-    padding: 4px;
+    
   }
 
   .all-directors a:hover {
