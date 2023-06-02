@@ -311,7 +311,9 @@ nav {
   top: -170px;
 }
 
-.for-trailer-mobile, .favorite-mobile, .watchlist-mobile {
+.for-trailer-mobile,
+.favorite-mobile,
+.watchlist-mobile {
   width: 64px;
   height: 64px;
   display: flex;
@@ -566,7 +568,7 @@ nav {
   font-size: 32px;
   position: relative;
   color: white;
-  right: 32px
+  right: 32px;
 }
 
 .sort::after {
@@ -686,7 +688,7 @@ nav {
 
 ::-webkit-scrollbar-thumb {
   background: #77c3ec;
-  border: .2em solid #dcdcdc;
+  border: 0.2em solid #dcdcdc;
   border-radius: 100vw;
 }
 
@@ -845,7 +847,7 @@ footer {
     padding: 32px;
     top: -180px;
   }
-  .all-photos img{
+  .all-photos img {
     padding: 0px;
     border-radius: 0px;
   }

@@ -19,12 +19,14 @@ const movies_page = document.querySelector(".movies-page");
 const watchlist_page = document.querySelector(".watchlist-page");
 const favorites_movies_page = document.querySelector(".favorites-movies-page");
 const login_page = document.querySelector(".login-page");
-const register_page = document.querySelector('.register-page');
+const register_page = document.querySelector(".register-page");
 
 const directors_page_mobile = document.querySelector(".directors-page-mobile");
 const movies_page_mobile = document.querySelector(".movies-page-mobile");
 const watchlist_page_mobile = document.querySelector(".watchlist-page-mobile");
-const favorites_movies_page_mobile = document.querySelector(".favorites-movies-page-mobile");
+const favorites_movies_page_mobile = document.querySelector(
+  ".favorites-movies-page-mobile"
+);
 const login_page_mobile = document.querySelector(".login-page-mobile");
 const register_page_mobile = document.querySelector(".register-page-mobile");
 
@@ -33,20 +35,20 @@ const director_card = document.querySelectorAll(".kubrick");
 
 const sort = document.querySelectorAll(".sort");
 
-const number_elements = document.querySelectorAll('.number');
+const number_elements = document.querySelectorAll(".number");
 
-number_elements.forEach(number_element => {
-  number_element.addEventListener('click', function() {
-    number_elements.forEach(element => {
-      element.classList.remove('selected');
+number_elements.forEach((number_element) => {
+  number_element.addEventListener("click", function () {
+    number_elements.forEach((element) => {
+      element.classList.remove("selected");
     });
-    this.classList.add('selected');
+    this.classList.add("selected");
   });
 });
 
 sort.forEach(function (text) {
   text.addEventListener("click", function () {
-      this.classList.toggle("clicker");
+    this.classList.toggle("clicker");
   });
 });
 
@@ -182,4 +184,3 @@ login_page_mobile.addEventListener("click", function (event) {
   event.preventDefault();
   window.location.href = "login.html";
 });
-

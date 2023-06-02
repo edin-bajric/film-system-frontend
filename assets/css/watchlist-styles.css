@@ -434,7 +434,7 @@ nav {
 
 ::-webkit-scrollbar-thumb {
   background: #77c3ec;
-  border: .2em solid #dcdcdc;
+  border: 0.2em solid #dcdcdc;
   border-radius: 100vw;
 }
 
@@ -584,7 +584,7 @@ footer {
   .info {
     padding: 0px;
   }
-  
+
   .info p {
     font-family: "Oswald";
     font-weight: 400;
@@ -604,7 +604,8 @@ footer {
   .slogan {
     font-size: 48px;
   }
-  .all, .sort {
+  .all,
+  .sort {
     font-size: 24px;
   }
   .sort:hover::after {
