@@ -232,6 +232,7 @@
     object-fit: cover;
     width: 100%;
     height: 550px;
+    opacity: 70%;
   }
   
   .top-part {
@@ -270,6 +271,8 @@
     cursor: pointer;
     transition: 0.3s;
     text-decoration: none;
+    background-color: #77c3ec;
+    border-radius: 8px;
   }
 
   .all-movies a:hover {
@@ -288,6 +291,8 @@
     cursor: pointer;
     transition: 0.3s;
     text-decoration: none;
+    background-color: #77c3ec;
+    border-radius: 8px;
   }
 
   .all-directors a:hover {
