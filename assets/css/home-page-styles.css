@@ -260,6 +260,7 @@ height: 24px;
   color: white;
   bottom: 175px;
   left: 32px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .movie-side-scroll-container {
@@ -327,6 +328,7 @@ height: 24px;
   color: white;
   position: relative;
   bottom: 32px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .director-side-scroll-container {
