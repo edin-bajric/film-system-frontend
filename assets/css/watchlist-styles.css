@@ -372,6 +372,12 @@ nav {
   font-size: 24px;
 }
 
+.rating {
+  color: #77c3ec;
+  font-variation-settings: "FILL" 1, "wght" 1000;
+  cursor: default;
+}
+
 .for-button {
   display: flex;
   justify-content: center;
@@ -601,6 +607,9 @@ footer {
   }
   .sort:hover::after {
     color: #77c3ec;
+  }
+  .rating {
+    font-variation-settings: "FILL" 1, "wght" 400;
   }
   .get-top {
     flex-direction: column;

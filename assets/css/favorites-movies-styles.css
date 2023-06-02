@@ -373,6 +373,12 @@
     font-weight: 400;
     font-size: 24px;
   }
+
+  .rating {
+    color: #77c3ec;
+    font-variation-settings: "FILL" 1, "wght" 1000;
+    cursor: default;
+  }
   
   .for-button {
     display: flex;
@@ -604,6 +610,9 @@
     }
     .all-directors a{
       width: 110px;
+    }
+    .rating {
+      font-variation-settings: "FILL" 1, "wght" 400;
     }
     .get-top {
       flex-direction: column;

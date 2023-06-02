@@ -241,6 +241,7 @@ nav {
 .rating {
   color: #77c3ec;
   font-variation-settings: "FILL" 1, "wght" 1000;
+  cursor: default;
 }
 
 .add-rating {
