@@ -273,6 +273,7 @@
     text-decoration: none;
     background-color: #77c3ec;
     border-radius: 8px;
+    padding: 8px;
   }
 
   .all-movies a:hover {
@@ -293,6 +294,7 @@
     text-decoration: none;
     background-color: #77c3ec;
     border-radius: 8px;
+    padding: 8px;
   }
 
   .all-directors a:hover {
